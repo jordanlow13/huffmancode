@@ -1,0 +1,50 @@
+# Project: Huffman
+# Makefile created by Red Panda C++ 1.0.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = huffmanCode.o huffmanCodeOutput.o huffmanDecode.o huffmanDecoder.o huffmanTree.o huffmanTreeDraw.o main.o readtext.o
+LINKOBJ  = huffmanCode.o huffmanCodeOutput.o huffmanDecode.o huffmanDecoder.o huffmanTree.o huffmanTreeDraw.o main.o readtext.o
+CLEANOBJ  =  huffmanCode.o huffmanCodeOutput.o huffmanDecode.o huffmanDecoder.o huffmanTree.o huffmanTreeDraw.o main.o readtext.o
+LIBS     =  -mwindows -lgraphics -luuid -lmsimg32 -lgdi32 -limm32 -lole32 -loleaut32 -lwinmm -lgdiplus  
+INCS     =  
+CXXINCS  =  
+BIN      = Huffman.exe
+CXXFLAGS = $(CXXINCS)  -Wall -Wextra -g3 -pipe -D__DEBUG__
+CFLAGS   = $(INCS)  -Wall -Wextra -g3 -pipe -D__DEBUG__
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) $(BIN) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+huffmanCode.o: huffmanCode.cpp struct.h
+	$(CPP) -c D:/桌面/Huffman/huffmanCode.cpp -o huffmanCode.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+huffmanCodeOutput.o: huffmanCodeOutput.cpp struct.h
+	$(CPP) -c D:/桌面/Huffman/huffmanCodeOutput.cpp -o huffmanCodeOutput.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+huffmanDecode.o: huffmanDecode.cpp struct.h
+	$(CPP) -c D:/桌面/Huffman/huffmanDecode.cpp -o huffmanDecode.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+huffmanDecoder.o: huffmanDecoder.cpp huffmanDecode.h huffmanCodeOutput.h struct.h
+	$(CPP) -c D:/桌面/Huffman/huffmanDecoder.cpp -o huffmanDecoder.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+huffmanTree.o: huffmanTree.cpp struct.h
+	$(CPP) -c D:/桌面/Huffman/huffmanTree.cpp -o huffmanTree.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+huffmanTreeDraw.o: huffmanTreeDraw.cpp struct.h
+	$(CPP) -c D:/桌面/Huffman/huffmanTreeDraw.cpp -o huffmanTreeDraw.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.cpp huffmanTree.h readtext.h huffmanCodeOutput.h struct.h huffmanCode.h huffmanDecoder.h huffmanTreeDraw.h
+	$(CPP) -c D:/桌面/Huffman/main.cpp -o main.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+readtext.o: readtext.cpp struct.h
+	$(CPP) -c D:/桌面/Huffman/readtext.cpp -o readtext.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk

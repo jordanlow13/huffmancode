@@ -1,0 +1,304 @@
+[Project]
+filename = Huffman.dev
+name = Huffman
+UnitCount = 19
+Type = 0
+Ver = 3
+ObjFiles = 
+Includes = 
+Libs = 
+PrivateResource = 
+ResourceIncludes = 
+MakeIncludes = 
+Compiler = 
+CppCompiler = 
+Linker = -lgraphics -luuid -lmsimg32 -lgdi32 -limm32 -lole32 -loleaut32 -lwinmm -lgdiplus_@@__@@_
+IsCpp = 1
+Icon = Huffman.ico
+ExeOutput = 
+ObjectOutput = 
+LogOutput = 
+LogOutputEnabled = 0
+OverrideOutput = 0
+OverrideOutputName = 
+HostApplication = 
+UseCustomMakefile = 0
+CustomMakefile = 
+UsePrecompiledHeader = 0
+PrecompiledHeader = 
+CommandLine = 
+Folders = 
+IncludeVersionInfo = 0
+SupportXPThemes = 0
+CompilerSet = 1
+CompilerSetType = 1
+CompilerSettings = 0000000000110000000001001
+StaticLink = 0
+AddCharset = 1
+Encoding = AUTO
+ModelType = 0
+UseUTF8 = 0
+
+
+[Unit1]
+FileName = huffmanCode.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[VersionInfo]
+Major = 1
+Minor = 0
+Release = 0
+Build = 0
+LanguageID = 1033
+CharsetID = 1252
+CompanyName = 
+FileVersion = 
+FileDescription = Developed using the Red Panda C++ IDE
+InternalName = 
+LegalCopyright = 
+LegalTrademarks = 
+OriginalFilename = 
+ProductName = 
+ProductVersion = 
+AutoIncBuildNr = 0
+SyncProduct = 1
+
+
+[Unit2]
+FileName = huffmanCodeOutput.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit3]
+FileName = huffmanDecode.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit4]
+FileName = huffmanDecoder.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit5]
+FileName = huffmanTree.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit6]
+FileName = huffmanTreeDraw.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit7]
+FileName = readtext.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit8]
+FileName = struct.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit9]
+FileName = huffmanCode.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit10]
+FileName = huffmanCodeOutput.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit11]
+FileName = huffmanDecode.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit12]
+FileName = huffmanDecoder.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit13]
+FileName = huffmanTree.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit14]
+FileName = huffmanTreeDraw.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit15]
+FileName = main.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit16]
+FileName = readtext.cpp
+CompileCpp = 1
+Folder = 源文件
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit17]
+FileName = background.jpg
+Folder = 其他文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit18]
+FileName = data.txt
+Folder = 其他文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
+
+
+[Unit19]
+FileName = output.txt
+Folder = 其他文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 0
+FileEncoding = UTF-8
